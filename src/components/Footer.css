@@ -1,0 +1,102 @@
+.footer{
+    background-color: black;
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: -5rem 0 0 -4rem;
+}
+
+.footer-spot-logo{
+    margin: 0 0 0 4rem;
+    width: 10rem;
+    height: 3.5rem;
+}
+
+.about-uls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 11rem;
+    margin-left: -10rem;
+}
+.colum-info{
+    text-align: left;
+}
+.about-uls li{
+    list-style: none;
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Times, serif, Courier, monospace, 'Arial Narrow', Arial, sans-serif;
+}
+
+.title-ul-footer{
+    font-size: 0.9rem;
+    color: #979797;
+}
+
+.secondary-footer{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-footer-ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-footer-li{
+        width: 8rem;
+        list-style: none;
+        font-size: 0.7rem;
+        color: #979797;
+}
+
+.social{
+    margin-left: 4rem;
+}
+
+.about-site{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    color: #979797;
+    margin-right: 6rem;
+}
+
+.about-site span{
+    position: absolute;
+    right: 6.6rem;
+    margin-top: -1rem;
+}
+
+.about-site span:hover, .btn-footer-li:hover, .about-uls li:hover {
+    color:#38b721;
+    cursor: pointer;
+
+}
+
+.social-icon{
+    background-color: #29282d;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.7rem;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+    cursor: pointer;
+    background-color: #38b721;
+}
