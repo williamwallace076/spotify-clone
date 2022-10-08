@@ -11,7 +11,7 @@
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    margin: -5rem 0 0 -4rem;
+    margin-top: -3rem;
 }
 
 .footer-spot-logo{
@@ -42,6 +42,7 @@
 .title-ul-footer{
     font-size: 0.9rem;
     color: #979797;
+    margin-bottom: 2rem;
 }
 
 .secondary-footer{

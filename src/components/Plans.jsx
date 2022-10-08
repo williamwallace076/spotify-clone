@@ -1,84 +1,119 @@
 import React from "react";
+import CardPlans from "./CardPlans";
 import './Plans.css'
+
+import visaLogo from '../sources/imgs/visaLogo.webp'
+import masterCardLogo from '../sources/imgs/masterCardLogo.jfif'
+import amexLogo from '../sources/imgs/logoAmex.png'
+import eloCardLogo from '../sources/imgs/EloLogo.webp'
+import hipercardLogo from '../sources/imgs/hipercardLogo.jpg'
+import itauLogo from '../sources/imgs/itauLogo.png'
+import santanderLogo from '../sources/imgs/santanderLogo.png'
+import bradescoLogo from '../sources/imgs/bradescoLogo.png'
+import bbLogo from '../sources/imgs/bbLogo.png'
+import caixaLogo from '../sources/imgs/caixaLogo.png'
+import interLogo from '../sources/imgs/interLogo.png'
+import boletoLogo from '../sources/imgs/boletoLogo.png'
+import nubankLogo from '../sources/imgs/nubankLogo.png'
+import originalLogo from '../sources/imgs/originalLogo.png'
+import nextLogo from '../sources/imgs/nextLogo.jfif'
+import sicrediLogo from '../sources/imgs/sicrediLogo.png'
 
 export default () => {
     return (
         <div className="plans-area">
             <h4 className="plans-title-area" > Escolha Seu plano Premium</h4>
             <span className="plans-subtitle-area" >Ouça sem limites no seu celular, alto-falante e em outros dispositivos.
-            <div className="cards-payment">Aceiamos cartões de todos os tipos !</div>
+            <div className="cards-payment-logo">
+                <div className="card-imgs">
+                    <img className="card-img-item" src={visaLogo} alt="logo" />
+                    <img className="card-img-item" src={masterCardLogo}alt="logo" />
+                    <img className="card-img-item" src={amexLogo} alt="logo" />
+                    <img className="card-img-item" src={eloCardLogo} alt="logo" />
+                    <img className="card-img-item" src={hipercardLogo} alt="logo" />
+                </div>
+                <div className="more-cards"><u>+ Outros 11</u>
+                    <ul className="more-cards">
+                       <li>
+                            <ul className="submenu">
+                                <li className="card-img-item" ><img src={itauLogo} alt="logo" /></li>
+                                <li className="card-img-item" ><img src={santanderLogo} alt="logo" /></li>
+                                <li className="card-img-item" ><img src={bradescoLogo} alt="logo" /></li>
+                                <li className="card-img-item" ><img src={bbLogo} alt="logo" /></li>
+                                <li className="card-img-item" ><img src={caixaLogo} alt="logo" /></li>
+                                <li className="card-img-item" ><img src={interLogo} alt="logo" /></li>
+                                <li className="card-img-item" ><img src={boletoLogo} alt="logo" /></li>
+                                <li className="card-img-item" ><img src={nubankLogo} alt="logo" /></li>
+                                <li className="card-img-item" ><img src={originalLogo} alt="logo" /></li>
+                                <li className="card-img-item" ><img src={nextLogo} alt="logo" /></li>
+                                <li className="card-img-item" ><img src={sicrediLogo} alt="logo" /></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
             </span>
 
+            
+
             <div className="selection-plan-area">
-                <div className="plan-card">
-                    <p className="card-title">1 mês grátis ao assinar</p>
-                    <p className="card-subtitle">Pagamento único disponível</p>
-                    <p className="tipe-of-plan">Individual</p>
-                    <p className="value-of-plan">R$ 19,90/mês após o período da oferta</p>
-                    <p className="number-of-counts">1 Conta</p>
-                    <div className="descripition-card">
-                    <p>✅ Ouça músicas sem anúncios</p>
-                    <p>✅ Ouça em qualquer lugar — até no modo offline</p>
-                    <p>✅ Escolha a música que quer ouvir</p>
-                    <p>✅ Faça um plano pré-pago ou uma assinatura</p>
-                    </div>
 
-                    <button className="button-card">COMEÇAR</button>
+                <CardPlans 
+                cardTitle="1 mês grátis ao assinar" 
+                cardSubtitle="Pagamento único disponível" 
+                tipeOfPlan="Individual"
+                valueOfPlan="R$ 19,90/mês após o período da oferta"
+                numberOfCounts="1 Conta"
+                descriptionCard1='✅ Ouça músicas sem anúncios'
+                descriptionCard2='✅ Ouça em qualquer lugar — até no modo offline'
+                descriptionCard3='✅ Escolha a música que quer ouvir'
+                descriptionCard4='✅ Faça um plano pré-pago ou uma assinatura'
+                buttonCard='COMEÇAR'
+                termsAndConditions='O mês grátis não está disponível para usuários que já experimentaram o Premium.'
+                > </CardPlans>
 
-                    <span className="terms-and-conditions"><u>Sujeito a Termos e Condições.</u> O mês grátis não está disponível para usuários que já experimentaram o Premium.</span>
-                </div>
-                <div className="plan-card">
-                    <p className="card-title">1 mês grátis ao assinar</p>
-                    <p className="card-subtitle">Pagamento único disponível</p>
-                    <p className="tipe-of-plan">Duo</p>
-                    <p className="value-of-plan">R$ 24,90/mês após o período da oferta</p>
-                    <p className="number-of-counts">2 Contas</p>
-                    <div className="descripition-card">
-                    <p>✅ 2 contas Premium para um casal que mora junto</p>
-                    <p>✅ Ouça sem anúncios, no modo offline e sob demanda</p>
-                    <p>✅ Faça um plano pré-pago ou uma assinatura</p>
-                    </div>
+                <CardPlans 
+                cardTitle="1 mês grátis ao assinar" 
+                cardSubtitle="Pagamento único disponível" 
+                tipeOfPlan="Duo"
+                valueOfPlan="R$ 24,90/mês após o período da oferta"
+                numberOfCounts="2 Contas"
+                descriptionCard1='✅ 2 contas Premium para um casal que mora junto'
+                descriptionCard2='✅ Ouça sem anúncios, no modo offline e sob demanda'
+                descriptionCard3='✅ Faça um plano pré-pago ou uma assinatura'
+                buttonCard='COMEÇAR'
+                termsAndConditions='O mês grátis não está disponível para usuários que já experimentaram o Premium.'
+                > </CardPlans>
 
-                    <button className="button-card">COMEÇAR</button>
+                <CardPlans 
+                cardTitle="1 mês grátis ao assinar" 
+                cardSubtitle="Pagamento único disponível" 
+                tipeOfPlan="Família"
+                valueOfPlan="R$ 34,90/mês após o período da oferta"
+                numberOfCounts="Até 6 Contas"
+                descriptionCard1='✅ 6 contas Premium para familiares que moram no mesmo endereço'
+                descriptionCard2='✅  Bloqueie músicas com conteúdo explícito'
+                descriptionCard3='✅ Ouça sem anúncios, no modo offline e sob demanda'
+                descriptionCard4='✅ Spotify Kids: um aplicativo separado, feito especialmente para crianças'
+                descriptionCard5='✅  Faça um plano pré-pago ou uma assinatura'
+                buttonCard='COMEÇAR'
+                termsAndConditions='O mês grátis não está disponível para usuários que já experimentaram o Premium.'
+                > </CardPlans>
 
-                    <span className="terms-and-conditions"><u>Sujeito a Termos e Condições.</u> O mês grátis não está disponível para usuários que já experimentaram o Premium.</span>
-                </div>
-                <div className="plan-card">
-                    <p className="card-title">1 mês grátis ao assinar</p>
-                    <p className="card-subtitle">Pagamento único disponível</p>
-                    <p className="tipe-of-plan">Família</p>
-                    <p className="value-of-plan">R$ 34,90/mês após o período da oferta</p>
-                    <p className="number-of-counts">Até 6 Contas</p>
-                    <div className="descripition-card">
-                    <p>✅ 6 contas Premium para familiares que moram no mesmo endereço</p>
-                    <p>✅ Bloqueie músicas com conteúdo explícito</p>
-                    <p>✅ Ouça sem anúncios, no modo offline e sob demanda</p>
-                    <p>✅ Spotify Kids: um aplicativo separado, feito especialmente para crianças</p>
-                    <p>✅ Faça um plano pré-pago ou uma assinatura</p>
-                    </div>
+                <CardPlans 
+                cardTitle="1 mês grátis ao assinar" 
+                tipeOfPlan="Universitário"
+                valueOfPlan="R$ 9,90/mês após o período da oferta"
+                numberOfCounts="1 Conta"
+                descriptionCard1='✅ Desconto especial para estudantes universitários que tenham direito à oferta'
+                descriptionCard2='✅ Ouça músicas sem anúncios'
+                descriptionCard3='✅ Ouça em qualquer lugar — até no modo offline'
+                descriptionCard4='✅  Escolha a música que quer ouvir'
+                buttonCard='COMEÇAR'
+                termsAndConditionsUniversitario='Oferta disponível somente para estudantes de instituições de ensino superior credenciadas. O mês grátis não está disponível para usuários que já experimentaram o Premium. '
+               > </CardPlans>
 
-                    <button className="button-card">COMEÇAR</button>
-
-                    <span className="terms-and-conditions"><u>Sujeito a Termos e Condições.</u> O mês grátis não está disponível para usuários que já experimentaram o Premium.</span>
-                </div>
-                <div className="plan-card">
-                    <p className="card-title">1 mês grátis ao assinar</p>
-                    <p className="tipe-of-plan">Universitário</p>
-                    <p className="value-of-plan" id="universitario">R$ 9,90/mês após o período da oferta</p>
-                    <p className="number-of-counts">1 Conta</p>
-                    <div className="descripition-card">
-                    <p>✅ Desconto especial para estudantes universitários que tenham direito à oferta</p>
-                    <p>✅ Ouça músicas sem anúncios</p>
-                    <p>✅ Ouça em qualquer lugar — até no modo offline</p>
-                    <p>✅ Escolha a música que quer ouvir</p>
-                    </div>
-
-                    <button className="button-card">COMEÇAR</button>
-
-                    <span className="terms-and-conditions">Oferta disponível somente para estudantes de instituições de ensino superior credenciadas. O mês grátis não está disponível para usuários que já experimentaram o Premium. <u>Sujeito aos Termos e Condições</u> da oferta do Spotify de desconto para universitários.</span>
-                </div>
-                
             </div>
-        </div>
+    </div>
     )
 }
